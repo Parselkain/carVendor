@@ -1,0 +1,253 @@
+/*
+Theme Name: carVendor
+Theme URI:
+Author: Beltramidesign
+Author URI: https://beltramidesign.it
+Description: Theme for car vendor
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, sticky-post, translation-ready
+Text Domain: cv
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* General
+-------------------------------------------------------- */
+
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.main-content{
+  flex:1;
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Helpers
+-------------------------------------------------------- */
+
+.animate{
+  webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Widgets
+-------------------------------------------------------- */
+.widget_search .screen-reader-text{display: block;}
+.widget_search #s{width:70%;float:left;}
+.widget_search #searchsubmit{width:30%;float:left;background: #fff;}
+
+
+/* pagination
+-------------------------------------------------------- */
+.pagination{margin-bottom:40px}
+.page-numbers{display: inline-block;padding: 10px 15px;border: 1px solid #ddd;margin-right:4px;}
+
+/* first menu
+-------------------------------------------------------- */
+#nav-fix-top {
+background-color: #1a2c33;
+font-family: 'Open Sans', sans-serif;
+}
+#nav-fix-top .container {
+    padding: 4px 0;
+}
+#nav-fix-top,
+#nav-fix-top a {
+    font-weight: 400;
+    font-style: normal;
+    color: #aaa;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+#nav-fix-top ul {
+    display: flex;
+}
+#nav-fix-top .nav-lan-cur li:nth-child(2){
+    margin-left: 35px;
+}
+#nav-fix-top .navbar-social-help {
+    float: left;
+}
+#nav-fix-top .navbar-social-help li {
+    padding: 0 12px;
+    position: relative;
+}
+#nav-fix-top .navbar-social-help li:nth-child(2):after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: 4px;
+    background-color: #aaa;
+    width: 1px;
+    height: 9px;
+}
+#nav-fix-top .navbar-social-help li:nth-child(2):before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1px;
+    top: 4px;
+    background-color: #aaa;
+    width: 1px;
+    height: 9px;
+}
+#nav-fix-top .navbar-social-icon {
+    margin-left: 60px;
+    display: inline-flex;
+}
+#nav-fix-top .navbar-social-icon li{
+    margin-right: 14px;
+}
+#nav-fix-top .navbar-social-icon li:last-child{
+    margin-right: 0;
+}
+#nav-fix-top .navbar-social-icon i {
+    font-size: 14px;
+}
+
+/* second menu fixed
+-------------------------------------------------------- */
+body.home .navbar-expand-lg {
+    /* background-color: transparent!important; */
+}
+
+/* --------------------------------------------------------
+Tablet
+-------------------------------------------------------- */
+@media (max-width:998px){
+
+}
+
+/* --------------------------------------------------------
+Smartphone
+-------------------------------------------------------- */
+
+@media (max-width:767px){
+
+}
+
+/* WordPress Core Styles
+-------------------------------------------------------------- */
+ .gallery-caption{padding:5px; font-size: 10px;}
+ .bypostauthor{border-left: 3px solid #ddd;padding-left: 20px;}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
