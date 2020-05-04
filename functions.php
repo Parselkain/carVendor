@@ -30,9 +30,13 @@ if(! function_exists('cv_setup_theme') ) {
       add_image_size('cv_quad', 600, 600, true);
       add_image_size('cv_single', 800, 500, true);
 
-      // create custom menus
+      // create custom menus - MAIN
       register_nav_menus(array(
         'header' => esc_html__('Header','cv'),
+      ));
+      // create custom menus - HELP
+      register_nav_menus(array(
+        'social-help' => esc_html__('social-help','cv'),
       ));
 
       //load theme languages
