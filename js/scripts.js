@@ -9,6 +9,15 @@
         $("body").removeClass('is-scrolled');
     }
   });
+  $( ".login-popup" )
+  .mouseenter(function() {
+    $( this ).addClass('popup-visible');
+  });
 
+
+  $( ".main-content" )
+  .mouseenter(function() {
+    $( '.login-popup' ).removeClass('popup-visible');
+  });
 
 }(jQuery));

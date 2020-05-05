@@ -69,16 +69,18 @@
     </div>
     <div class="nav-utility">
       <span class="user-circle animate-fast"><i class="fas fa-user-circle"></i></span>
-      <div class="login-popup">
+      <div class="login-popup animate-fast">
         <div class="triangle-popup-login"></div>
         <form method="post">
           <div class="form-group">
             <label for="exampleInputEmail1"><?php esc_html_e( 'Email address', 'cv' ); ?></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com" autocomplete="off">
+
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1"><?php esc_html_e( 'Password', 'cv' ); ?></label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" autocomplete="new-password" >
+            
           </div>
           <div class="form-check mt-5">
             <label class="cb-remember">
