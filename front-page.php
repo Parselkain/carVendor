@@ -35,19 +35,169 @@
                             <div class="tab-pane show active" id="Find" role="tabpanel" aria-labelledby="Find-tab">
 
                                 <form>
-                                   <div class="row-tab-form-hero">
+                                   <div class="row row-tab-form-hero">
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
                                         
-                                        <div class="custom-select">
-                                        <span><i class="fas fa-chevron-down animate-fast"></i></span>
-                                            <select>
-                                                <option value="0">Select car:</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                           
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-tab-form-hero">
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="custom-select">
+                                                <span><i class="fas fa-chevron-down animate-fast"></i></span>
+                                                <select>
+                                                    <option value="0">Select car:</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                            
+                                            </div>
+                                        
                                         </div>
                                     </div>
 

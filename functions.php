@@ -80,7 +80,7 @@ if(! function_exists('cv_scripts') ) {
 
   function cv_scripts(){
     
-    wp_enqueue_script('cv-jquery-js', get_template_directory_uri() .'/js/jquery-3.5.1.min.js', array('jquery'),null ,false );
+    //wp_enqueue_script('cv-jquery-js', get_template_directory_uri() .'/js/jquery-3.5.1.min.js', array('jquery'),null ,false );
     wp_enqueue_script('cv-popper-js', get_template_directory_uri() .'/js/popper.min.js', array('jquery'),null ,true );
     wp_enqueue_script('cv-bootstrap-js', get_template_directory_uri() .'/js/bootstrap.min.js', array('jquery'),null ,true );
     wp_enqueue_script('cv-scripts-js', get_template_directory_uri() .'/js/scripts.js', array('jquery'),null ,true );

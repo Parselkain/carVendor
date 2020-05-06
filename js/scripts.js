@@ -1,13 +1,13 @@
-(function($){
+(function ($) {
 
   // ================== ADD BODY CLASS WHEN SCROLLED ================== \\
   var nx_scroll_position = 0;
-  $(document).scroll(function(){
+  $(document).scroll(function () {
     nx_scroll_position = $(this).scrollTop();
-    if(nx_scroll_position > 100){
+    if (nx_scroll_position > 100) {
       $("body").addClass('is-scrolled');
     } else {
-        $("body").removeClass('is-scrolled');
+      $("body").removeClass('is-scrolled');
     }
   });
 
@@ -15,18 +15,18 @@
 
 
   // ================== ADD LOGIN POPUP CLASS ================== \\
-  $( ".login-popup" )
-  .mouseenter(function() {
-    $( this ).addClass('popup-visible');
-  });
-  $( ".main-content" )
-  .mouseenter(function() {
-    $( '.login-popup' ).removeClass('popup-visible');
-  });
-// =================================================================== \\  
+  $(".login-popup")
+    .mouseenter(function () {
+      $(this).addClass('popup-visible');
+    });
+  $(".main-content")
+    .mouseenter(function () {
+      $('.login-popup').removeClass('popup-visible');
+    });
+  // =================================================================== \\  
 
 
-// ================== SCRIPT FOR CUSTOM SELECT LIST OPTION - HERO BANNER ================== \\
+  // ================== SCRIPT FOR CUSTOM SELECT LIST OPTION - HERO BANNER ================== \\
 
   var x, i, j, selElmnt, a, b, c;
   /*look for any elements with the class "custom-select":*/
@@ -46,37 +46,37 @@
       create a new DIV that will act as an option item:*/
       c = document.createElement("DIV");
       c.innerHTML = selElmnt.options[j].innerHTML;
-      c.addEventListener("click", function(e) {
-          /*when an item is clicked, update the original select box,
-          and the selected item:*/
-          var y, i, k, s, h;
-          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-          h = this.parentNode.previousSibling;
-          for (i = 0; i < s.length; i++) {
-            if (s.options[i].innerHTML == this.innerHTML) {
-              s.selectedIndex = i;
-              h.innerHTML = this.innerHTML;
-              y = this.parentNode.getElementsByClassName("same-as-selected");
-              for (k = 0; k < y.length; k++) {
-                y[k].removeAttribute("class");
-              }
-              this.setAttribute("class", "same-as-selected");
-              break;
+      c.addEventListener("click", function (e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
             }
+            this.setAttribute("class", "same-as-selected");
+            break;
           }
-          h.click();
+        }
+        h.click();
       });
       b.appendChild(c);
     }
     x[i].appendChild(b);
-    a.addEventListener("click", function(e) {
-        /*when the select box is clicked, close any other select boxes,
-        and open/close the current select box:*/
-        e.stopPropagation();
-        closeAllSelect(this);
-        this.nextSibling.classList.toggle("select-hide");
-        this.classList.toggle("select-arrow-active");
-      });
+    a.addEventListener("click", function (e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
   }
   function closeAllSelect(elmnt) {
     /*a function that will close all select boxes in the document,
@@ -102,8 +102,8 @@
   document.addEventListener("click", closeAllSelect);
 
 
-  $( ".row-tab-form-hero .select-selected" ).on( "click", function() {
-      $('.custom-select i.fa-chevron-down').toggleClass('ico-rotate');
+  $(".row-tab-form-hero .select-selected").on("click", function () {
+    $(this).parents('.custom-select').toggleClass('ico-rotate');
   });
 
 
@@ -113,7 +113,7 @@
 
 
 
-// =================================================================== \\  
+  // =================================================================== \\  
 
 
 
