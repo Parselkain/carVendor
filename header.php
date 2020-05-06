@@ -74,7 +74,7 @@
         <form method="post">
           <div class="form-group">
             <label for="exampleInputEmail1"><?php esc_html_e( 'Email address', 'cv' ); ?></label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.com" autocomplete="off">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<?php esc_html_e( 'example@email.com', 'cv' ); ?>" autocomplete="off">
 
           </div>
           <div class="form-group">

@@ -49,8 +49,12 @@ a:hover {
     margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
-
+button.button-orange {
+    border-radius: 3px;
+    outline: none !important;
+    border: none;
+    box-shadow: 0 2px 0 #cc7702;
+}
 
 
 /* Helpers
@@ -86,6 +90,7 @@ a:hover {
 #nav-fix-top {
 background-color: #1a2c33;
 font-family: 'Open Sans', sans-serif;
+z-index: 99;
 }
 #nav-fix-top .container {
     padding: 4px 0;
@@ -153,8 +158,11 @@ font-family: 'Open Sans', sans-serif;
 
 /* second menu fixed
 -------------------------------------------------------- */
+.navbar-expand-lg {
+    z-index: 99;
+}
 body.home .navbar-expand-lg {
-    /* background-color: transparent!important; */
+    background-color: transparent!important;
     padding: 13px 16px;
 }
 .navbar-expand-lg .container {
@@ -238,12 +246,6 @@ body.home .navbar-expand-lg {
     font-size: 10px;
     right: -4px;
 }
-.navbar-expand-lg .container-button-logpopup button {
-    border-radius: 3px;
-    outline: none !important;
-    border: none;
-    box-shadow: 0 2px 0 #cc7702;
-}
 /* login popup
 -------------------------------------------------------- */
 .navbar-expand-lg .login-popup {
@@ -256,6 +258,7 @@ body.home .navbar-expand-lg {
     box-shadow: -1px 2px 10px rgba(0,0,0,.3);
     opacity: 0;
     pointer-events: none;
+    z-index: 9;
 }
 .navbar-expand-lg .login-popup:before {
     content: "";
@@ -375,12 +378,150 @@ body.home .navbar-expand-lg {
 	transform: rotate(45deg);
 }
 
-/* login popup
+/* front-page
 -------------------------------------------------------- */
 
-.asdasda {
-    
+.home-hero-banner {
+    height: 590px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  
 }
+.home .col-hero-tab-menu {
+    height: 443px;
+    align-items: flex-end;
+    display: flex;
+}
+.home .hero-tab-menu {
+    width: 100%;
+}
+.home .nav-tabs .nav-link {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #123440;
+    border-radius: unset;
+    border: none;
+}
+.home .nav-tabs .nav-link.active {
+    background-color: #153e4c;
+    border: none;
+}
+.home .nav-tabs {
+    border: none;
+}
+.home .tab-pane {
+    background: #264957;
+    background: -moz-linear-gradient(-45deg, #264957 0%, #153e4c 100%);
+    background: -webkit-linear-gradient(-45deg, #264957 0%,#153e4c 100%);
+    background: linear-gradient(135deg, #264957 0%,#153e4c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#264957', endColorstr='#153e4c',GradientType=1 );
+    border: none;
+    padding: 38px 30px 38px;
+}
+/* .home .row-tab-form-hero {
+    display: flex;
+    justify-content: space-between;
+} */
+/* .home .row-tab-form-hero select {
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    padding-left: 14px;
+    padding-right: 40px;
+    outline: none !important;
+    height: 46px!important;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+} */
+
+/* CUSTOM SELECT
+-------------------------------------------------------- */
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    width: 200px;
+    border: none;
+    padding: 0;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: #eceff3;
+  }
+
+  /* Custom arrow icon */
+
+.custom-select i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: #888;
+  pointer-events: none;
+}
+.custom-select i.ico-rotate {
+    transform: translateY(-50%) rotate(180deg);
+}
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active i {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #eceff3;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+
+
+
+
+
 
 
 

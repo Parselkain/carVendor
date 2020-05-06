@@ -7,7 +7,7 @@
 require_once('assets/bs4navwalker.php');
 
 // content width
-if ( ! isset( $content_width ) ) $content_width = 1400;
+if ( ! isset( $content_width ) ) $content_width = 1920;
 
 /* Setup Theme
 -------------------------------------------------------- */
@@ -26,7 +26,7 @@ if(! function_exists('cv_setup_theme') ) {
       add_theme_support("post-thumbnails");
 
       // create custom size images
-      add_image_size('cv_big', 1400, 800, true);
+      add_image_size('cv_big', 1920, 800, true);
       add_image_size('cv_quad', 600, 600, true);
       add_image_size('cv_single', 800, 500, true);
 
@@ -79,7 +79,8 @@ add_action('widgets_init','cv_sidebars');
 if(! function_exists('cv_scripts') ) {
 
   function cv_scripts(){
-
+    
+    wp_enqueue_script('cv-jquery-js', get_template_directory_uri() .'/js/jquery-3.5.1.min.js', array('jquery'),null ,false );
     wp_enqueue_script('cv-popper-js', get_template_directory_uri() .'/js/popper.min.js', array('jquery'),null ,true );
     wp_enqueue_script('cv-bootstrap-js', get_template_directory_uri() .'/js/bootstrap.min.js', array('jquery'),null ,true );
     wp_enqueue_script('cv-scripts-js', get_template_directory_uri() .'/js/scripts.js', array('jquery'),null ,true );
