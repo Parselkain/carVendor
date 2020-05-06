@@ -26,7 +26,7 @@ if(! function_exists('cv_setup_theme') ) {
       add_theme_support("post-thumbnails");
 
       // create custom size images
-      add_image_size('cv_big', 1400, 800, true);
+      add_image_size('cv_big', 1920, 800, true);
       add_image_size('cv_quad', 600, 600, true);
       add_image_size('cv_single', 800, 500, true);
 
