@@ -102,6 +102,7 @@ if(! function_exists('cv_styles') ) {
   function cv_styles(){
 
     wp_enqueue_style('cv-bootstrap-css', get_template_directory_uri() .'/css/bootstrap.min.css');
+    wp_enqueue_style('cv-hamburger-css', get_template_directory_uri() .'/css/hamburgers.css');
     wp_enqueue_style('cv-style-default-css', get_template_directory_uri() .'/style.css');
     wp_enqueue_style('cv-font', '//fonts.googleapis.com/css?family=Montserrat:200,300,400,700');
     wp_enqueue_style('cv-font', '//fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
