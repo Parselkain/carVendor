@@ -118,7 +118,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="row row-tab-form-hero">
+                                    <div class="row row-tab-form-hero advanced animate-slow overflow hide-row">
                                         <div class="col-12 col-md-6 col-xl-3">
                                             <div class="custom-select">
                                                 <span><i class="fas fa-chevron-down animate-fast"></i></span>
@@ -200,13 +200,21 @@
                                         
                                         </div>
                                     </div>
+                                    <div class="row tools-tab-hero">
+                                        <div class="col-12 col-md-6">
+                                            <p class="advanced-search-tab-hero"><?php esc_html_e( 'Advanced search', 'cv' ); ?><i class="fas fa-chevron-down animate-fast"></i></p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <button type="submit" class="btn btn-primary button-orange"><p><i class="fas fa-search"></i><?php esc_html_e( '29 Cars', 'cv' ); ?></p></button>
+                                        </div>
+                                    </div>
 
 
 
 
 
                                 
-                                    <button type="submit" class="btn btn-primary button-orange"><p><i class="fas fa-search"></i><?php esc_html_e( '29 Cars', 'cv' ); ?></p></button>
+                                    
                                 </form>
 
 
@@ -214,7 +222,82 @@
                             
                             </div>
                             <div class="tab-pane" id="Value" role="tabpanel" aria-labelledby="Value-tab">
-                            DASDSADASSDADASDSADASSDADASDSADASSDADASDSADASSDADASDSADASSDADASDSADASSDADASDSADASSDA
+
+
+
+                                <form>
+                                   <div class="row row-tab-form-hero">
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control" placeholder="<?php esc_html_e( 'Email', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="number" name="phone" class="form-control" placeholder="<?php esc_html_e( 'Phone', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="text" name="make" class="form-control" placeholder="<?php esc_html_e( 'Make', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="text" name="model" class="form-control" placeholder="<?php esc_html_e( 'Model', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        
+                                        
+
+
+
+
+
+
+                                    </div>
+
+                                    <div class="row row-tab-form-hero advanced animate-slow overflow hide-row">
+                                    <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="text" name="year" class="form-control" placeholder="<?php esc_html_e( 'Year', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="text" name="mileage" class="form-control" placeholder="<?php esc_html_e( 'Mileage', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="text" name="vin" class="form-control" placeholder="<?php esc_html_e( 'VIN', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-xl-3">
+                                            <div class="form-group">
+                                                <input type="text" name="model" class="form-control" placeholder="<?php esc_html_e( 'Model', 'cv' ); ?>" autocomplete="off">
+                                            </div>
+                                        </div>
+                                       
+
+                                    </div>
+                                    <div class="row tools-tab-hero">
+                                        <div class="col-12 col-md-6">
+                                            <p class="advanced-search-tab-hero"><?php esc_html_e( 'Advanced search', 'cv' ); ?><i class="fas fa-chevron-down animate-fast"></i></p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <button type="submit" class="btn btn-primary button-orange"><p><?php esc_html_e( 'Value my car', 'cv' ); ?></p></button>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                
+                                    
+                                </form>
+                            
                             </div>
                         </div>
                     </div>

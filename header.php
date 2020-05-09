@@ -82,7 +82,7 @@
             <input type="password" class="form-control" id="exampleInputPassword1" name="password" autocomplete="new-password" >
             
           </div>
-          <div class="form-check mt-5">
+          <div class="form-check my-3">
             <label class="cb-remember">
               <input type="checkbox" name="privacy" value="<?= isset($privacy)?$privacy:"1" ?>" <?= isset($privacy)?'checked':'' ?> />
               <span class="checkmark"></span><?php esc_html_e( 'Remember me', 'cv' ); ?></a>

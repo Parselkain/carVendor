@@ -49,6 +49,9 @@ a:hover {
     margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
 }
+button {
+    cursor: pointer;
+}
 button.button-orange {
     border-radius: 3px;
     outline: none !important;
@@ -383,6 +386,9 @@ body.home .navbar-expand-lg {
 /* front-page
 -------------------------------------------------------- */
 
+/* hero and tab
+-------------------------------------------------------- */
+
 .home-hero-banner {
     height: 590px;
     width: 100%;
@@ -391,19 +397,21 @@ body.home .navbar-expand-lg {
     top: 0;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    /*background-position: center;*/
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
   
 }
 .home .col-hero-tab-menu {
-    height: 443px;
+    height: 475px;
     align-items: flex-end;
     display: flex;
 }
 .home .hero-tab-menu {
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 230px;
 }
 .home .nav-tabs .nav-link {
     color: white;
@@ -433,13 +441,20 @@ body.home .navbar-expand-lg {
 .home .row-tab-form-hero {
     display: flex;
     justify-content: space-between;
-} 
+    height: 63px;
+}
+.home .row-tab-form-hero.overflow {
+    overflow: hidden;
+}
+.home .row-tab-form-hero.hide-row {
+    line-height: 0;
+    height: 0px;
+}
 /* CUSTOM SELECT
 -------------------------------------------------------- */
 /* The container must be positioned relative: */
 .custom-select {
     position: relative;
-    font-family: 'Open Sans', sans-serif;
     width: 100%;
     border: none;
     padding: 0;
@@ -506,9 +521,51 @@ body.home .navbar-expand-lg {
     background-color: rgba(0, 0, 0, 0.1);
   }
 
+  .tools-tab-hero div:nth-child(2) {
+      text-align: right;
+  }
+  .tools-tab-hero {
+    color: #888888;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .tools-tab-hero button {
+    padding: 16px 25px 13px;
+  }
+  .tools-tab-hero button i {
+      margin-right: 10px;
+  }
+  .advanced-search-tab-hero {
+      cursor: pointer;
+      width: fit-content;
+  }
+  .tools-tab-hero .advanced-search-tab-hero i {
+    font-size: 9px;
+    margin-left: 5px;
+  }
+i.fa-chevron-down.ico-rotate {
+    transform: rotate(180deg);
+}
+/*-------------------------------------------------------- */
 
-
-
+#Value input {
+    background-color: #eceff3;
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 0;
+    background-clip: unset;
+}
+#Value input::-webkit-input-placeholder,
+#Value input:-ms-input-placeholder,
+#Value input::placeholder {
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    opacity: 1;
+}
 
 
 
@@ -522,7 +579,31 @@ body.home .navbar-expand-lg {
     QUERY
 -------------------------------------------------------- */
 @media (max-width:1199px){
-
+    .home .col-hero-tab-menu {
+        height: 616px;
+    }
+    .home-hero-banner {
+        height: 732px;
+    }
+}
+@media (max-width:991px){
+    #nav-fix-top {
+        display: none;
+    }
+    .home .col-hero-tab-menu {
+        height: 661px;
+    }
+    body.home .navbar-expand-lg {
+        background-color: #153e4d!important;
+    }
+}
+@media (max-width:767px){
+    .home .col-hero-tab-menu {
+        height: 840px;
+    }
+    .home-hero-banner {
+        height: 911px;
+    }
 }
 
 /* WordPress Core Styles
